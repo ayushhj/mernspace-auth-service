@@ -1,5 +1,7 @@
-function test (name: String){
-    console.log(name)
+function test(name: string) {
+    console.log(name);
+
+
 }
 
-test("ayush")
+test('ayush');
