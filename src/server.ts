@@ -1,6 +1,3 @@
-function test(name: string) {
-    console.log(name)
-    console.log('hello')
-}
+import { Config } from './config/index'
 
-test('ayush')
+console.log(Config.PORT)
