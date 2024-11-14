@@ -1,12 +1,15 @@
 import express, { NextFunction, Request, Response } from 'express'
 import { HttpError } from 'http-errors'
 import logger from './config/logger'
+import authRouter from './routes/auth'
 
 const app = express()
 
 app.get('/', (req, res) => {
     res.send('Welcome')
 })
+
+app.use('/auth', authRouter)
 
 //global error handler
 
